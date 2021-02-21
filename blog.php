@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/utilities.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Read Our Blog</title>
-</head>
+include_once 'headerblog.php';
 
-<body id="home">
-  <header class="hero blog">
-    <div id="navbar" class="navbar top">
-      <h1 class="logo">
-        <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Leadger
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#cases">Cases</a></li>
-          <li><a href="index.html#blog">Blog</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+?>
+    
     <div class="content">
       <h1>Blog</h1>
     </div>
@@ -48,7 +25,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eos dolor expedita, illo temporibus
               recusandae aliquam, ut quaerat deserunt quia, cumque inventore deleniti eaque officia repellendus
               exercitationem aperiam qui placeat?</p>
-            <a href="post.html" class="btn btn-dark">
+            <a href="post.php" class="btn btn-dark">
               <i class="fas fa-chevron"></i>
               Read More</a>
           </div>
@@ -72,7 +49,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eos dolor expedita, illo temporibus
               recusandae aliquam, ut quaerat deserunt quia, cumque inventore deleniti eaque officia repellendus
               exercitationem aperiam qui placeat?</p>
-            <a href="post.html" class="btn btn-light">
+            <a href="post.php" class="btn btn-light">
               <i class="fas fa-chevron"></i>
               Read More</a>
           </div>
@@ -96,7 +73,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eos dolor expedita, illo temporibus
               recusandae aliquam, ut quaerat deserunt quia, cumque inventore deleniti eaque officia repellendus
               exercitationem aperiam qui placeat?</p>
-            <a href="post.html" class="btn btn-dark">
+            <a href="post.php" class="btn btn-dark">
               <i class="fas fa-chevron"></i>
               Read More</a>
           </div>
@@ -105,36 +82,8 @@
     </article>
   </main>
 
-  <footer class="footer bg-dark">
-    <div class="social">
-      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-      <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-    </div>
-    <p>Copyright &copy;2020 - Edgeledger</p>
-  </footer>
+<?php
 
-  <script>
-    const navbar = document.getElementById('navbar');
-    let scrolled = false;
+include_once 'footer.php';
 
-    window.onscroll = function () {
-      if (window.pageYOffset > 100) {
-        navbar.classList.remove('top');
-        if (!scrolled) {
-          navbar.style.transform = 'translatey(-70px)';
-        }
-        setTimeout(function () {
-          navbar.style.transform = 'translatey(0)';
-          scrolled = true
-        }, 200);
-      } else {
-        navbar.classList.add('top');
-        scrolled = false;
-      }
-    };
-  </script>
-</body>
-
-</html>
+?>
