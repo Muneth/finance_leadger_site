@@ -1,9 +1,9 @@
 <?php   
 
-$serverName = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbName = "phploginproject";
+$serverName = "eu-cdbr-west-03.cleardb.net";
+$dbUsername = "b26eaa157f67ab";
+$dbPassword = "af8f126a";
+$dbName = "heroku_e366f3f606a810e";
 
 // using mysqli procedural way to connect to the database...
 // not using normal mySQL way 
