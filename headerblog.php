@@ -20,9 +20,6 @@
       <nav>
         <ul>
         <li><a href="index.php">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#cases">Cases</a></li>
-          <li><a href="blog.php">Blog</a></li>
           <li><a href="signup.php">Sign up</a></li>
           <li><a href="login.php">Log in</a></li>
         </ul>
