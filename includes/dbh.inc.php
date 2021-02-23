@@ -1,6 +1,6 @@
 <?php   
 
-$serverName = "mysql-21117-0.cloudclusters.net";
+$serverName = "mysql-21123-0.cloudclusters.net";
 $dbUsername = "adminmuneth";
 $dbPassword = "password";
 $dbName = "phpproject01";
