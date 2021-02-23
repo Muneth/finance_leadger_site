@@ -2,11 +2,18 @@
 
 require('../vendor/autoload.php');
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+if($_SERVER['HTTP_HOST'] != 'edge-ledger-website.herokuapp.com') {
+    
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+    $dotenv->required(['serverName', 'dbUsername', 'dbPassword', 'dbName', 'port']);
+};
 
-// using mysqli procedural way to connect to the database...
-// not using normal mySQL way 
+$serverName = $_ENV['serverName'];
+$dbUsername = $_ENV['dbUsername'];
+$dbPassword = $_ENV['dbPassword'];
+$dbName = $_ENV['dbName'];
+$port = $_ENV['port'];
 
 $conn = mysqli_connect($serverName, $dbUsername, $dbPassword, $dbName, $port);
 
