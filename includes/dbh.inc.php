@@ -1,9 +1,9 @@
 <?php   
 
-$serverName = "eu-cdbr-west-03.cleardb.net";
-$dbUsername = "b26eaa157f67ab";
-$dbPassword = "af8f126a";
-$dbName = "heroku_e366f3f606a810e";
+$serverName = "host=mysql-21117-0.cloudclusters.net";
+$dbUsername = "adminmuneth";
+$dbPassword = "password";
+$dbName = "phpproject01";
 
 // using mysqli procedural way to connect to the database...
 // not using normal mySQL way 
