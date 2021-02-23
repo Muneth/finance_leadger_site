@@ -1,10 +1,9 @@
 <?php   
 
-$serverName = "mysql-21117-0.cloudclusters.net";
-$dbUsername = "adminmuneth";
-$dbPassword = "password";
-$dbName = "phpproject01";
-$port = "21123";
+require('../vendor/autoload.php');
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 // using mysqli procedural way to connect to the database...
 // not using normal mySQL way 

@@ -1,0 +1,12 @@
+{
+    "name": "kercode/edgeledger_website",
+    "authors": [
+        {
+            "name": "Muneth",
+            "email": "muneetchaudhary@me.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    }
+}
